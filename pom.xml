@@ -10,7 +10,21 @@
         <module>checkup-storm</module>
         <module>checkup-lenskit</module>
         <module>checkup-mahout</module>
+        <module>checkup-spark</module>
+        <module>checkup-hadoop</module>
     </modules>
+    <dependencies>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongo-java-driver</artifactId>
+            <version>2.12.4</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+        </dependency>
+    </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>

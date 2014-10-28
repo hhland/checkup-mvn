@@ -1,0 +1,6 @@
+/checkup-pig/target/
+/checkup-storm/target/
+/checkup-lenskit/target/
+/checkup-mahout/target/
+/checkup-spark/target/
+/checkup-hadoop/target/

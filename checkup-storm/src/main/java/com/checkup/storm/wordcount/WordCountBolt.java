@@ -5,7 +5,6 @@
  */
 package com.checkup.storm.wordcount;
 
-import backtype.storm.stats$counter_extract;
 import backtype.storm.task.OutputCollector;
 import backtype.storm.task.TopologyContext;
 import backtype.storm.topology.OutputFieldsDeclarer;
@@ -13,8 +12,6 @@ import backtype.storm.topology.base.BaseRichBolt;
 import backtype.storm.tuple.Fields;
 import backtype.storm.tuple.Tuple;
 import backtype.storm.tuple.Values;
-import clojure.core$count__inliner;
-import clojure.pprint$collect_clauses;
 import java.util.HashMap;
 import java.util.Map;
 
