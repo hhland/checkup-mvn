@@ -4,3 +4,5 @@
 /checkup-mahout/target/
 /checkup-spark/target/
 /checkup-hadoop/target/
+/checkup-giraph/target/
+/checkup-odps/target/

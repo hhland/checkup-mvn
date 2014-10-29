@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.checkup</groupId>
+        <artifactId>checkup-mvn</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>checkup-odps</artifactId>
+    <packaging>jar</packaging>
+    <name>checkup-mvn:odps</name>
+    <properties>
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
+    <dependencies>
+     <dependency>  
+            <groupId>com.aliyun</groupId>  
+            <artifactId>odps-core</artifactId>  
+            <version>0.13.2</version>  
+            <scope>system</scope>  
+            <systemPath>${project.basedir}/../lib/odps-sdk-core-0.13.2.jar</systemPath>  
+        </dependency>  
+        
+         <dependency>  
+            <groupId>com.aliyun</groupId>  
+            <artifactId>odps-udf</artifactId>  
+            <version>0.13.2</version>  
+            <scope>system</scope>  
+            <systemPath>${project.basedir}/../lib/odps-sdk-udf-0.13.2.jar</systemPath>  
+        </dependency>  
+        
+         <dependency>  
+            <groupId>com.aliyun</groupId>  
+            <artifactId>odps-mapred</artifactId>  
+            <version>0.13.2</version>  
+            <scope>system</scope>  
+            <systemPath>${project.basedir}/../lib/odps-sdk-mapred-0.13.2.jar</systemPath>  
+        </dependency>  
+        
+         <dependency>  
+            <groupId>com.aliyun</groupId>  
+            <artifactId>odps-commons</artifactId>  
+            <version>0.13.2</version>  
+            <scope>system</scope>  
+            <systemPath>${project.basedir}/../lib/odps-sdk-commons-0.13.2.jar</systemPath>  
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>18.0</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sourceforge.javacsv</groupId>
+            <artifactId>javacsv</artifactId>
+            <version>2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>bouncycastle</groupId>
+            <artifactId>bcmail-jdk16</artifactId>
+            <version>140</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.9.13</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-core-asl</artifactId>
+            <version>1.9.13</version>
+        </dependency>
+    </dependencies>
+</project>

@@ -12,6 +12,8 @@
         <module>checkup-mahout</module>
         <module>checkup-spark</module>
         <module>checkup-hadoop</module>
+        <module>checkup-giraph</module>
+        <module>checkup-odps</module>
     </modules>
     <dependencies>
         <dependency>
@@ -23,6 +25,18 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
+        </dependency>
+        
+        
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.3</version>
         </dependency>
     </dependencies>
     <properties>
