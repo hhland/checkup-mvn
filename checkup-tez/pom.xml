@@ -10,15 +10,15 @@
     <packaging>jar</packaging>
     <name>checkup-mvn:tez</name>
     <dependencies>
-        <dependency>
-            <groupId>org.apache.tez</groupId>
-            <artifactId>tez</artifactId>
-            <version>0.5.1</version>
-            <classifier>tests</classifier>
-        </dependency>
+     
         <dependency>
             <groupId>org.apache.tez</groupId>
             <artifactId>tez-api</artifactId>
+            <version>0.5.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tez</groupId>
+            <artifactId>tez-examples</artifactId>
             <version>0.5.1</version>
         </dependency>
     </dependencies>
