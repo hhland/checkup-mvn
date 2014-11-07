@@ -15,7 +15,8 @@
         <module>checkup-giraph</module>
         <module>checkup-odps</module>
         <module>checkup-tez</module>
-    </modules>
+    <module>checkup-lucene</module>
+  </modules>
     <dependencies>
         <dependency>
             <groupId>org.mongodb</groupId>
