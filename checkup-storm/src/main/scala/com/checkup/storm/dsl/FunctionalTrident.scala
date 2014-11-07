@@ -15,6 +15,7 @@ import storm.trident.tuple.TridentTuple
 import storm.trident.operation.{TridentCollector, BaseFunction}
 import backtype.storm.tuple.Fields
 import scala.language.implicitConversions
+import java.text.MessageFormat._
 
 /**
  * Functional DSL for Trident so you can easily use Scala closures with Trident.
@@ -28,6 +29,7 @@ object FunctionalTrident {
 
   class FlatMapFuncT1(func: TridentTuple => Seq[Any]) extends BaseFunction {
     def execute(tuple: TridentTuple, collector: TridentCollector) {
+      
       func(tuple).foreach { thing => collector.emit(List(thing.asInstanceOf[AnyRef])) }
     }
   }
@@ -47,7 +49,7 @@ object FunctionalTrident {
                       new FlatMapFuncT1(mapFunc),
                       new Fields(fieldMapping._2))
   }
-
+  
   implicit def TridentStreamToFunctionalStream(stream: storm.trident.Stream) =
     new FunctionalStream(stream)
 }
