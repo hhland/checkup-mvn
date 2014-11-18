@@ -23,6 +23,13 @@
  mapper="org.apache.hadoop.examples.WordCount.TokenizerMapper"
  reducer="org.apache.hadoop.examples.WordCount.IntSumReducer" />
    
+<hadoop:script id="setupScript" location="script/copy-files.groovy">
+   
+ <hadoop:property name="localSourceFile" value="${localSourceFile}"/>
+ <hadoop:property name="inputDir" value="${wordcount.input.path}"/>
+ <hadoop:property name="outputDir" value="${wordcount.output.path}"/>
+</hadoop:script>
+   
     <hadoop:job-runner id="runner" job-ref="wordcountJob"  run-at-startup="true" />
         
             
