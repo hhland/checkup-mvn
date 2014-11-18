@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/hadoop"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:lang="http://www.springframework.org/schema/lang"
+        xmlns:beans="http://www.springframework.org/schema/beans"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+          http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+          http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-4.0.xsd
+          http://www.springframework.org/schema/hadoop http://www.springframework.org/schema/hadoop/spring-hadoop-2.0.xsd
+">
+    <context:property-placeholder location="local.properties" />
+     
+    <configuration>
+	  fs.default.name=${fs.default.name}
+	  
+   </configuration>      
+    
+   <job id="wordcountJob"
+ input-path="${wordcount.input.path}"
+ output-path="${wordcount.output.path}"
+ mapper="org.apache.hadoop.examples.WordCount.TokenizerMapper"
+ reducer="org.apache.hadoop.examples.WordCount.IntSumReducer"/>
+    <job-runner id="runner" job="wordcountJob" run-at-startup="true" />
+        
+            
+</beans>
