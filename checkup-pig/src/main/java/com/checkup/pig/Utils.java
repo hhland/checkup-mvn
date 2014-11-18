@@ -29,9 +29,9 @@ public class Utils {
         
              for(int j=1;j<size1+1;j++){
                 int d=str0.charAt(i-1)==str1.charAt(j-1)?0:1
-                  ,temp= Integer.min(iarr0[i-1][j]+1 , iarr0[i][j-1]+1);
+                  ,temp= Math.min(iarr0[i-1][j]+1 , iarr0[i][j-1]+1);
                 
-                iarr0[i][j]=Integer.min(temp, iarr0[i-1][j-1]+d);
+                iarr0[i][j]=Math.min(temp, iarr0[i-1][j-1]+d);
              }
             
         }
