@@ -37,6 +37,7 @@ public class TextSearchJUnitTest {
 
     @Before
     public void setUp() {
+        spark=new JavaSparkContext(Const.MASTER, TextSearchJUnitTest.class.getName());
     }
 
     @After
@@ -48,8 +49,8 @@ public class TextSearchJUnitTest {
     //
     //@Test
     public void hello() {
-
-        JavaRDD<String> file = spark.textFile("hdfs://...");
+       
+        JavaRDD<String> file = spark.textFile(Const.HDFS_IPC_BASE+"/input/test.txt");
         JavaRDD<String> errors = file.filter(new Function<String, Boolean>() {
             public Boolean call(String s) {
                 return s.contains("ERROR");
