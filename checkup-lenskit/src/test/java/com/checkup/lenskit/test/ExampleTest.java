@@ -7,6 +7,7 @@ package com.checkup.lenskit.test;
 
 import java.io.File;
 import java.util.List;
+import junit.framework.TestCase;
 import org.grouplens.lenskit.ItemRecommender;
 import org.grouplens.lenskit.ItemScorer;
 import org.grouplens.lenskit.RatingPredictor;
