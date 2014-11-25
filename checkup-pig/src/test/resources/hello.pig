@@ -2,14 +2,12 @@ data =
     LOAD 'input'
     AS (query:CHARARRAY);
 
-dump data;    
+    
  
 queries_group =
     GROUP data
     BY query; 
-
-dump queries_group;    
-
+    
 queries_count = 
     FOREACH queries_group 
     GENERATE 
