@@ -1,6 +1,10 @@
-data = LOAD 'input' AS (query:CHARARRAY);
+data =
+    LOAD 'input'
+    AS (query:CHARARRAY);
      
-queries_group = GROUP data BY query; 
+queries_group =
+    GROUP data
+    BY query; 
     
 queries_count = 
     FOREACH queries_group 

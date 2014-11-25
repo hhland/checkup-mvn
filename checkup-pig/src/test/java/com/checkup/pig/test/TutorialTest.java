@@ -66,9 +66,8 @@ public class TutorialTest {
         "(yahoo,3)",
         "(facebook,2)",
     };
-         pigTest=new PigTest(new String[]{
-           R.Pig.hello.getFile()
-        },args);
+         pigTest=new PigTest(R.Pig.hello.getFile(),args);
+        
         pigTest.assertOutput("data", input, "queries_limit", output);
      }
 }
