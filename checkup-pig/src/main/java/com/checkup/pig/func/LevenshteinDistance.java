@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.checkup.pig.udf;
+package com.checkup.pig.func;
 
+import com.checkup.pig.Utils;
 import com.checkup.pig.Utils;
 import java.io.IOException;
 import org.apache.pig.EvalFunc;
