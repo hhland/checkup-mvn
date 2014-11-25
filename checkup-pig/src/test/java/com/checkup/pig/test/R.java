@@ -13,7 +13,7 @@ public class R {
     
     public enum Pig{
       
-        script1_hadoop,script1_local,script2_hadoop,script2_local;
+        script1_hadoop,script1_local,script2_hadoop,script2_local,hello;
         
         public String getFile(){
            return ClassLoader.getSystemResource(this.name()+".pig").getFile();

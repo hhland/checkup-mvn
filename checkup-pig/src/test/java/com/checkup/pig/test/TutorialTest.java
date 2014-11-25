@@ -36,10 +36,7 @@ public class TutorialTest {
     
     @Before
     public void setUp() throws IOException {
-        pigTest=new PigTest(new String[]{
-          R.Pig.script1_local.getFile()
-                ,R.Pig.script2_local.getFile()
-        });
+        
        
     }
     
@@ -52,6 +49,26 @@ public class TutorialTest {
     //
      @Test
      public void hello() throws IOException, ParseException {
-        pigTest.runScript();
+          String[] args = {
+        "n=2",
+        };
+         String[] input = {
+        "yahoo",
+        "yahoo",
+        "yahoo",
+        "twitter",
+        "facebook",
+        "facebook",
+        "linkedin",
+    };
+ 
+    String[] output = {
+        "(yahoo,3)",
+        "(facebook,2)",
+    };
+         pigTest=new PigTest(new String[]{
+           R.Pig.hello.getFile()
+        },args);
+        pigTest.assertOutput("data", input, "queries_limit", output);
      }
 }
