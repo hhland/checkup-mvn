@@ -36,7 +36,7 @@ public class TutorialTest {
     
     @Before
     public void setUp() throws IOException {
-        System.getProperties().setProperty("pigunit.exectype.cluster", "true");
+        //System.getProperties().setProperty("pigunit.exectype.cluster", "true");
        
     }
     
@@ -47,7 +47,7 @@ public class TutorialTest {
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
-     @Test
+     //@Test
      public void hello() throws IOException, ParseException {
           String[] args = {
         "n=2",
