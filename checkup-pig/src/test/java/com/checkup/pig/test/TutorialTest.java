@@ -36,7 +36,7 @@ public class TutorialTest {
     
     @Before
     public void setUp() throws IOException {
-        
+        System.getProperties().setProperty("pigunit.exectype.cluster", "true");
        
     }
     
