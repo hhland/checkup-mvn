@@ -19,7 +19,14 @@
         <dependency>
             <groupId>org.apache.tez</groupId>
             <artifactId>tez-examples</artifactId>
-            <version>0.5.1</version>
+            <version>0.5.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tez</groupId>
+            <artifactId>tez-tests</artifactId>
+            <version>0.5.2</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
     <properties>
