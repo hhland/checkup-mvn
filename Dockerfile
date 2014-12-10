@@ -5,7 +5,7 @@ ENV P_HOME /d/program
 ENV APACHE_HOME /d/program/apache
 RUN mkdir -p $APACHE_HOME  && mkdir $P_HOME/R &&  mkdir /d/download && mkdir /d/git && mkdir /d/notebook
 
-RUN apt-get update && apt-get install -y g++ cmake gfortran xpdf  libbz2-dev libgdbm-dev liblzma-dev libreadline-dev libsqlite3-dev libssl-dev tcl-dev tk-dev dpkg-dev wget
+RUN apt-get update && apt-get install -y g++ cmake gfortran xpdf  libbz2-dev libgdbm-dev liblzma-dev libreadline-dev libsqlite3-dev libssl-dev tcl-dev tk-dev dpkg-dev wget git subversion vim ssh
 
 WORKDIR /d/download
 
@@ -28,14 +28,14 @@ ENV MVN_HOME $APACHE_HOME/apache-maven-3.2.3
 RUN wget http://mirrors.cnnic.cn/apache/ant/binaries/apache-ant-1.9.4-bin.tar.gz && tar -xvf apache-ant-1.9.4-bin.tar.gz && mv apache-ant-1.9.4 $APACHE_HOME
 ENV ANT_HOME $APACHE/apache-ant-1.9.4
 
-RUN apt-get install -y git subversion vim ssh
+
 
 #python
 RUN wget https://www.python.org/ftp/python/2.7.8/Python-2.7.8.tgz && tar -xvf Python-2.7.8.tgz && mv Python-2.7.8 $P_HOME && cd $P_HOME/Python-2.7.8 && ./configure && make && make install && cd -
 RUN wget https://bootstrap.pypa.io/ez_setup.py -O - | python  && easy_install pip && pip install ipython[all]
 
 
-ENV PATH $PATH:$ANT_MOME/bin:$MVN_HOME/bin:$SCALA_HOME/bin:$CLOJURE_HOME/bin:$NODE_HOME/bin:$GROOVY_HOME/bin
+ENV PATH $PATH:$ANT_MOME/bin:$MVN_HOME/bin:$SCALA_HOME/bin:$CLOJURE_HOME/bin
 
 WORKDIR /d
 
