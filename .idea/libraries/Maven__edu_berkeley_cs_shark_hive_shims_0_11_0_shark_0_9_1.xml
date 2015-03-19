@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: edu.berkeley.cs.shark:hive-shims:0.11.0-shark-0.9.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/edu/berkeley/cs/shark/hive-shims/0.11.0-shark-0.9.1/hive-shims-0.11.0-shark-0.9.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/edu/berkeley/cs/shark/hive-shims/0.11.0-shark-0.9.1/hive-shims-0.11.0-shark-0.9.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/edu/berkeley/cs/shark/hive-shims/0.11.0-shark-0.9.1/hive-shims-0.11.0-shark-0.9.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

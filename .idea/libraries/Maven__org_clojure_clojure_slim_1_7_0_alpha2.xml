@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.clojure:clojure:slim:1.7.0-alpha2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.7.0-alpha2/clojure-1.7.0-alpha2-slim.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.7.0-alpha2/clojure-1.7.0-alpha2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.7.0-alpha2/clojure-1.7.0-alpha2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

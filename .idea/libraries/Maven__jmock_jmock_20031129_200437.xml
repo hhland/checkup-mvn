@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: jmock:jmock:20031129.200437">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/jmock/jmock/20031129.200437/jmock-20031129.200437.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/jmock/jmock/20031129.200437/jmock-20031129.200437-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/jmock/jmock/20031129.200437/jmock-20031129.200437-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

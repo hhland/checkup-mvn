@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.lens:lens-api:2.0.1-beta-incubating">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/lens/lens-api/2.0.1-beta-incubating/lens-api-2.0.1-beta-incubating.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/lens/lens-api/2.0.1-beta-incubating/lens-api-2.0.1-beta-incubating-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/lens/lens-api/2.0.1-beta-incubating/lens-api-2.0.1-beta-incubating-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

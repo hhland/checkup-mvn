@@ -18,6 +18,8 @@
     <module>checkup-lucene</module>
         <module>checkup-hive</module>
         <module>checkup-common</module>
+        <module>checkup-netty</module>
+        <module>checkup-lens</module>
     </modules>
     <dependencies>
         <dependency>
