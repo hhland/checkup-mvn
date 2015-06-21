@@ -20,6 +20,7 @@
         <module>checkup-common</module>
         <module>checkup-netty</module>
         <module>checkup-lens</module>
+        <module>checkup-keen</module>
     </modules>
     <dependencies>
         <dependency>
