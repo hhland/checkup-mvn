@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>jar upload</title>
+    <script src="/js/jquery-1.6.2.min.js"></script>
+</head>
+<body>
+  <table width="100%">
+      <tr>
+          <td width="10%">
+             Upload Jar:
+          </td>
+          <td>
+              <form action="/upload" method="post" enctype="multipart/form-data">
+                  <input name="file" type="file" size="20" />
+                  <input type="submit" name="submit" value="Upload"/>
+              </form>
+          </td>
+      </tr>
+      <tr>
+          <td width="10%">
+              Submit Topology:
+          </td>
+          <td>
+              <form id="submitJar">
+                  Jar:  <select id="pickjar"></select>
+                  Class: <input type="text" id="topologyClass" size="30">
+                  Arguments: <input type="text" id="topologyArguments" size="30">
+                  <input type="submit" value="Submit" onclick="submitTopology()">
+              </form>
+          </td>
+      </tr>
+  </table>
+  <script>
+      function submitTopology(){
+        var url= "/submit/" +
+               $('#pickjar').val() +
+               "/" + $('#topologyClass').val() +
+               "/" + $('#topologyArguments').val();
+        $.post(url, function(data){});
+      }
+      $.post("/dir/*.jar", function(data){
+          var jars = data.split("\n"); var options = "";
+          for (var i=0; i<jars.length; i++){
+            if (jars[i].length>0)
+              options = options + '<option>' + jars[i] + '</option>';}
+        $('#pickjar').html(options);});
+  </script>
+</body>
+</html>
